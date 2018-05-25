@@ -43,10 +43,6 @@ workflows:
             - lint
             - docs
           filters:
-            branches:
-              only:
-                - master
-                - repo-preparation
             tags:
               only: /^v[\d.]+$/
       - publish:
